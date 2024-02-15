@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="nI1fT5" name="Triton" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1"
+              version="0.1.0" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              pluginDesc="Digital Siren" pluginManufacturer="LIM" pluginManufacturerCode="LIM!"
+              pluginChannelConfigs="{1,1}">
+  <MAINGROUP id="nXfVOC" name="Triton">
+    <GROUP id="{7BB0E541-3CE8-85DA-68EF-22A87B92FA2A}" name="Source">
+      <GROUP id="{C1F90B4F-BEA3-8BA5-908E-CB9CC059A4F3}" name="Other">
+        <FILE id="zJzo0l" name="Trigger.h" compile="0" resource="0" file="Source/Trigger.h"/>
+        <FILE id="Fv0AfF" name="Parameters.h" compile="0" resource="0" file="Source/Parameters.h"/>
+        <FILE id="pHyQ9w" name="Adapter.h" compile="0" resource="0" file="Source/Adapter.h"/>
+      </GROUP>
+      <GROUP id="{FFC50376-0588-A63F-F3F6-F1AAE2D5B9E2}" name="GUI">
+        <FILE id="a7h9Vw" name="Triton_Background.png" compile="0" resource="1"
+              file="Source/Triton_Background.png"/>
+        <FILE id="vDOMtZ" name="TritonTheme.h" compile="0" resource="0" file="Source/TritonTheme.h"/>
+        <FILE id="jULPvX" name="Meter.h" compile="0" resource="0" file="Source/Meter.h"/>
+        <FILE id="JSsItM" name="PluginEditor.cpp" compile="1" resource="0"
+              file="Source/PluginEditor.cpp"/>
+        <FILE id="nGZP9A" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      </GROUP>
+      <GROUP id="{093A254E-89DA-5F91-74BE-B9417A71474E}" name="DSP">
+        <FILE id="FgkHao" name="Filters.h" compile="0" resource="0" file="Source/Filters.h"/>
+        <FILE id="I0SJop" name="Oscillator.h" compile="0" resource="0" file="Source/Oscillator.h"/>
+        <FILE id="AYC9Lf" name="PluginProcessor.cpp" compile="1" resource="0"
+              file="Source/PluginProcessor.cpp"/>
+        <FILE id="ENGwX6" name="PluginProcessor.h" compile="0" resource="0"
+              file="Source/PluginProcessor.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Triton"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Triton"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../Applications/JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Triton"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Triton"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../Applications/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Triton"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Triton"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../Applications/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
